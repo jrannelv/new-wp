@@ -29,6 +29,6 @@ function my_project_updated_send_email( $post_id ) {
     $message .= $post_title . ": " . $post_url;
  
     // Send email to admin.
-    wp_mail( 'darwin.delimos@pantheon.io', $subject, $message );
+    wp_mail( 'john.valdez@pantheon.io', $subject, $message );
 }
 add_action( 'save_post', 'my_project_updated_send_email' );
